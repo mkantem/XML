@@ -1,6 +1,6 @@
 # XML
 
-This repository holds various files around XML technology (DTD, XSL, XPATH, XQUERY, JDOM)** that are part of small projects used in class sessions. 
+This repository holds various files around **XML technology (DTD, XSL, XPATH, XQUERY, JDOM)** that are part of small projects used in class sessions. 
 
 In-Comment texts are in French to conform with the instruction language of the unit.
 
