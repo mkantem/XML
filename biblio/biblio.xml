@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblio SYSTEM "file:/Z:/Teaching/2022%20-%202023/XML%20et%20Web%20Services/workspace/biblio/biblio.dtd">
+<biblio>
+    <etudiant code="E1" nom="Diallo" prenom="Aboubacar" age="35">
+        <livre id="L1" titre="XML" dateEmprunt="01-11-2022" rendu="Non"/>
+        <livre id="L2" titre="PHP et WEB" dateEmprunt="03-02-2019" rendu="Oui"/>
+    </etudiant>
+    <etudiant code="E2" nom="Traore" prenom="Moussa" age="18">
+        <livre id="L1" titre="PHP" dateEmprunt="05-02-2008" rendu="Oui"/>
+        <livre id="L2" titre="Physique quantique" dateEmprunt="01-08-2020" rendu="Non"/>
+        <livre id="L3" titre="Algo" dateEmprunt="05-08-2022" rendu="Non"/>
+    </etudiant>
+    <etudiant code="E3" nom="Diarra" prenom="Kany" age="13">
+        <livre id="L1" titre="Princesse" dateEmprunt="05-02-2021" rendu="Oui"/>
+        <livre id="L2" titre="Tom et Jerry" dateEmprunt="01-08-2019" rendu="Oui"/>
+        <livre id="L3" titre="Macire Maimouna" dateEmprunt="05-08-2020" rendu="Non"/>
+    </etudiant>
+</biblio>
