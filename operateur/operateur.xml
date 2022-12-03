@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE operateur SYSTEM "file:/Z:/Teaching/2022%20-%202023/XML%20et%20Web%20Services/workspace/operateur/operateur.dtd">
+<operateur>
+    <client code="1" nom="Diarra">
+        <abonnement num="123" dateAb="2022-12-24" type="Fibre">
+            <facture numFact="01" dateFact="2023-01-30" montant="50000" reglee="Non"/>
+            <facture numFact="02" dateFact="2023-02-28" montant="65000" reglee="Non"/>
+            <facture numFact="03" dateFact="2023-03-30" montant="75000" reglee="Oui"/>
+        </abonnement>
+        <abonnement num="12" dateAb="2022-10-24" type="Fibre">
+            <facture numFact="01" dateFact="2023-01-30" montant="50000" reglee="Oui"/>
+            <facture numFact="02" dateFact="2023-02-28" montant="60000" reglee="Non"/>
+            <facture numFact="03" dateFact="2023-03-30" montant="7000" reglee="Oui"/>
+        </abonnement>
+    </client>
+    
+    <client code="2" nom="Traore">
+        <abonnement num="456" dateAb="2023-01-23" type="Fixe">
+            <facture numFact="01" dateFact="2023-01-30" montant="70000" reglee="Non"/>
+            <facture numFact="02" dateFact="2023-02-28" montant="55000" reglee="Non"/>
+            <facture numFact="03" dateFact="2023-03-30" montant="25000" reglee="Oui"/>
+        </abonnement>
+    </client>
+</operateur>

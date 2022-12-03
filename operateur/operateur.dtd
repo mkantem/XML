@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT operateur (client+) >
+<!ELEMENT client (abonnement+) >
+<!ELEMENT abonnement (facture+) >
+<!ELEMENT facture EMPTY >
+<!ATTLIST client 
+        code NMTOKEN #REQUIRED 
+        nom CDATA #REQUIRED>
+<!ATTLIST abonnement
+           num NMTOKEN #REQUIRED
+           type (Fibre|Fixe) 'Fibre'
+           dateAb CDATA #REQUIRED>
+<!ATTLIST facture 
+            numFact NMTOKEN #REQUIRED
+            dateFact CDATA #REQUIRED
+            montant NMTOKEN #REQUIRED
+            reglee (Oui|Non) 'Non'>
