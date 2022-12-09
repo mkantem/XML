@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" > 
+    <xsd:element name="operateur">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="client" maxOccurs="unbounded" type="C_T">
+                     </xsd:element>
+                
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+ 
+    <xsd:complexType name="C_T">
+        <xsd:sequence>
+            <xsd:element name="abonnement" maxOccurs="unbounded" type="A_B"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="code" type="xsd:int" use="required"></xsd:attribute>
+        <xsd:attribute name="nom" type="xsd:string" use="required"></xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="A_B">
+        <xsd:sequence>
+            <xsd:element name="facture" maxOccurs="unbounded" type="F_T">
+            </xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="num" type="xsd:int" use="required"></xsd:attribute>
+        <xsd:attribute name="type" default="Fixe">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Fibre"></xsd:enumeration>
+                    <xsd:enumeration value="Fixe"></xsd:enumeration>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+        <xsd:attribute name="dateAb" type="xsd:date" use="required"></xsd:attribute>
+    </xsd:complexType>
+    <xsd:complexType name="F_T">
+        <xsd:attribute name="numfacture" type="xsd:int" use="required"></xsd:attribute>
+        <xsd:attribute name="datefact" type="xsd:date" use="required"></xsd:attribute>
+        <xsd:attribute name="montant" type="xsd:double" use="required"></xsd:attribute>
+        <xsd:attribute name="regle" default="non">
+            <xsd:simpleType >
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="oui"></xsd:enumeration>
+                    <xsd:enumeration value="non"></xsd:enumeration>
+                   
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    
+    </xsd:complexType>
+</xsd:schema>
