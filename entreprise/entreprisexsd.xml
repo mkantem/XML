@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entreprise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/Z:/Teaching/2022%20-%202023/XML%20et%20Web%20Services/workspace/entreprise/entreprise.xsd">
+    
+    <agent type="Femme">
+        <matricule>A0121</matricule>
+        <prenom>Mariam</prenom>
+        <nom>Diaby</nom>
+        <datePS>2021-12-02</datePS>
+        <postes>
+            <poste code="02" titre="Admin reseau" salaire="450000" enActivite="Non"/>
+            <poste code="05" titre="Chef DSI" salaire="1500000" enActivite="Oui"/>
+        </postes>
+    </agent>
+    
+    <agent type="Homme">
+        <matricule>2BV56</matricule>
+        <prenom>Ibrahim</prenom>
+        <nom>Toure</nom>
+        <datePS>2014-05-14</datePS>
+        <postes>
+            <poste code="14" titre="Support IT" salaire="200000" enActivite="Oui"/>
+        </postes>
+    </agent>
+    
+</entreprise>

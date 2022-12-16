@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xsd:element name="entreprise">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="agent" maxOccurs="unbounded" type="TYPE_AGENT"></xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+    
+    <xsd:complexType name="TYPE_AGENT">
+        <xsd:sequence>
+            <xsd:element name="matricule" type="xsd:string"></xsd:element>
+            <xsd:element name="prenom" type="xsd:string"></xsd:element>
+            <xsd:element name="nom" type="xsd:string"></xsd:element>
+            <xsd:element name="datePS" type="xsd:date"></xsd:element>
+            <xsd:element name="postes" maxOccurs="unbounded" type="TYPE_POSTE"></xsd:element>
+        </xsd:sequence>
+        <xsd:attribute name="type">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Femme"></xsd:enumeration>
+                    <xsd:enumeration value="Homme"></xsd:enumeration>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+    
+    <xsd:complexType name="TYPE_POSTE">
+        <xsd:sequence>
+            <xsd:element name="poste" maxOccurs="unbounded" type="T_P"></xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="T_P">
+        <xsd:attribute name="code" type="xsd:int" use="required"></xsd:attribute>
+        <xsd:attribute name="titre" type="xsd:string" use="required"></xsd:attribute>
+        <xsd:attribute name="salaire" type="xsd:double" use="required"></xsd:attribute>
+        <xsd:attribute name="enActivite">
+            <xsd:simpleType>
+                <xsd:restriction base="xsd:string">
+                    <xsd:enumeration value="Oui"></xsd:enumeration>
+                    <xsd:enumeration value="Non"></xsd:enumeration>
+                </xsd:restriction>
+            </xsd:simpleType>
+        </xsd:attribute>
+    </xsd:complexType>
+</xsd:schema>

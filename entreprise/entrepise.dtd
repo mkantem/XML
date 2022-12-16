@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT entreprise (agent+) >
+<!ELEMENT agent (matricule, prenom, nom, datePS, postes)>
+<!ELEMENT matricule (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT datePS (#PCDATA) >
+<!ELEMENT postes (poste+) >
+<!ELEMENT poste EMPTY >
+
+<!ATTLIST agent type (Homme|Femme) 'Femme' >
+<!ATTLIST poste
+            code NMTOKEN #REQUIRED 
+            titre CDATA #REQUIRED
+            salaire NMTOKEN #REQUIRED
+            enActivite (Oui|Non) 'Oui'>
+
